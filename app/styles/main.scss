@@ -1,0 +1,131 @@
+/*----------------------------*\
+    #SLD.GS
+\*----------------------------*/
+
+/**
+ * #NOTES:
+ * This site uses the inuitcss framework
+ * (https://github.com/inuitcss/getting-started),
+ * that is based on the itcss structure for scalable css architecture
+ * (http://itcss.io).
+ * Please check the linked write-up for proper understanding of the structure
+ */
+
+
+
+
+
+/**
+ * #BOWER AUTOMATED IMPORTS
+ */
+// two lines below are just for bower imports
+// if any new bower component gets installed, 
+// bower:scss
+@import "bower_components/inuit-responsive-settings/_settings.responsive.scss";
+@import "bower_components/inuit-responsive-tools/_tools.responsive.scss";
+@import "bower_components/inuit-defaults/_settings.defaults.scss";
+@import "bower_components/inuit-tools-widths/_tools.widths.scss";
+@import "bower_components/inuit-widths/_trumps.widths.scss";
+@import "bower_components/inuit-reset/_generic.reset.scss";
+@import "bower_components/inuit-shared/_generic.shared.scss";
+@import "bower_components/inuit-mixins/_tools.mixins.scss";
+@import "bower_components/inuit-headings/_base.headings.scss";
+@import "bower_components/inuit-images/_base.images.scss";
+@import "bower_components/inuit-functions/_tools.functions.scss";
+@import "bower_components/inuit-buttons/_objects.buttons.scss";
+@import "bower_components/inuit-layout/_objects.layout.scss";
+@import "bower_components/inuit-clearfix/_trumps.clearfix.scss";
+@import "bower_components/inuit-box/_objects.box.scss";
+@import "bower_components/inuit-widths-responsive/_trumps.widths-responsive.scss";
+// endbower
+
+
+
+
+
+/**
+ * #SETTINGS
+ */
+@import "settings.colors";
+$inuit-base-text-color: $color-black;
+@import "bower_components/inuit-defaults/settings.defaults";
+$breakpoints: (
+    "larger-mobile"      "screen and (min-width: 29em)",
+    "tablet"             "screen and (min-width: 45em)",
+    "desktop"            "screen and (min-width: 51em)",
+    "container-width"    "screen and (min-width: 960px)",
+);
+@import "bower_components/inuit-responsive-settings/settings.responsive";
+
+
+
+
+
+/**
+ * #TOOLS
+ */
+@import "bower_components/inuit-functions/tools.functions";
+@import "bower_components/inuit-mixins/tools.mixins";
+@import "tools.mixins";
+@import "bower_components/inuit-responsive-tools/tools.responsive";
+@import "bower_components/inuit-tools-widths/tools.widths";
+@import "tools.aliases";
+
+
+
+
+
+/**
+ * #GENERIC
+ */
+@import "bower_components/inuit-normalize/generic.normalize";
+@import "bower_components/inuit-box-sizing/generic.box-sizing";
+@import "bower_components/inuit-reset/generic.reset";
+@import "bower_components/inuit-shared/generic.shared";
+
+
+
+
+
+/**
+ * #BASE
+ */
+@import "bower_components/inuit-page/base.page";
+@import "base.type";
+@import "bower_components/inuit-headings/base.headings";
+@import "bower_components/inuit-images/base.images";
+@import "base.links";
+
+
+
+
+
+/**
+ * #OBJECTS
+ */
+$inuit-enable-btn--small: true;
+@import "bower_components/inuit-buttons/objects.buttons";
+$inuit-enable-layout--center: true;
+@import "bower_components/inuit-layout/objects.layout";
+@import "bower_components/inuit-box/objects.box";
+@import "objects.wrapper";
+
+
+
+
+
+/**
+ * #COMPONENTS
+ */
+@import "components.browserupgrade";
+
+
+
+
+
+/**
+ * #TRUMPS
+ */
+@import "bower_components/inuit-clearfix/trumps.clearfix";
+//@import "bower_components/inuit-widths/trumps.widths";
+//@import "bower_components/inuit-widths-responsive/trumps.widths-responsive";

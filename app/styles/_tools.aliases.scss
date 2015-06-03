@@ -1,0 +1,9 @@
+// These are custom aliases for some often used 
+// inuitcss variables with long names
+
+$spacing-unit: $inuit-base-spacing-unit;
+$spacing-unit-small: $inuit-base-spacing-unit--small;
+
+@mixin font-size($inuit-font-size, $inuit-line-height: auto) {
+    @include inuit-font-size($inuit-font-size, $inuit-line-height);
+}

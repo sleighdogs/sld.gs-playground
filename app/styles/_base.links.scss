@@ -1,0 +1,11 @@
+a {
+    @include transition();
+    @include font-weight(bold);
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 1px solid transparent;
+    @include attention() {
+        @include transition();
+        border-color: inherit;
+    }
+}
